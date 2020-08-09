@@ -10,6 +10,7 @@
 3. 跳表是增加了向前指针的链表，跳表的查询时间复杂度为O(logN)，Redis内部就是使用跳表来实现的。
 4. 栈是一种 LIFO（后进先出）的数据结构，增删的时间复杂度都为O(1), 查找的时间复杂度为O(n)。
 5. 队列是一种FIFO（先进先出）的数据结构,在 FIFO 队列中，所有的新元素都插入队列的末尾，移除元素从队列头部移除。
+
 # 实际工程应用
 Stack(栈)的实例最多是UINavigationController，使用pushViewController进行入栈操作，使用popViewController进行出栈操作。
 Queue(队列)的实例则是NSOperationQueue,其中包括串行队列和并发队列，如果队列中的任务之间添加了依赖关系，使他们有了队列优先级(queuePriority)，则这个队列就变成了优先队列。
